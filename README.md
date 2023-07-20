@@ -63,17 +63,17 @@ user.email=eliaswebdev@gmail.com
 
 ### Install GPG keys: 
 ```zsh
-$ gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
+gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
 ```
 
 ### Install RVM: 
 ```zsh
-$ \curl -sSL https://get.rvm.io | bash -s stable
+\curl -sSL https://get.rvm.io | bash -s stable
 ```
 
 ### For installing RVM with default Ruby and Rails in one command, run: 
 ```zsh
-$ \curl -sSL https://get.rvm.io | bash -s stable --rails
+\curl -sSL https://get.rvm.io | bash -s stable --rails
 ```
 
 ## 6) Instalando o Node e Yarn
@@ -137,24 +137,4 @@ mysql
 ```zsh
 CREATE USER 'dev'@'%' IDENTIFIED BY 'root@123';
 GRANT ALL ON *.* TO 'dev'@'%';
-```
-
-
-```zsh
-
-```
-
-
-```zsh
-
-```
-
-
-```zsh
-
-```
-
-
-```zsh
-
 ```
