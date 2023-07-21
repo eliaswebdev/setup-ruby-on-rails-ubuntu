@@ -39,10 +39,42 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 Set `ZSH_THEME="spaceship"` in your `.zshrc`.
 
+### Plugins ZSH (`.zshrc`)
+```zsh
+plugins=(git
+  colored-man-pages
+  colorize
+  bundler
+  rake
+  ruby
+  zsh-autosuggestions
+  zsh-syntax-highlighting)
+```
+
+### Alias (`.zshrc`)
+```zsh
+alias gc="git commit -m"
+alias gs="git status"
+alias rf="RUBYOPT='-W:no-deprecated -W:no-experimental' rails db:drop db:create db:migrate db:seed"
+alias rsd="RUBYOPT='-W:no-deprecated -W:no-experimental' rails db:seed"
+alias fs="foreman start"
+alias rs="rails server"
+alias fds="make run"
+alias mailhog="~/go/bin/MailHog"
+```
+
+### Variables
+```zsh
+export RAILS_ENV="development"
+export PORT='3001'
+export EDITOR='code'
+```
+
 ## 3) Instalando dependências básicas
 ```zsh
 $ sudo apt-get install build-essential git curl net-tools jpegoptim optipng imagemagick libmagickwand-dev unattended-upgrades patch zlib1g-dev liblzma-dev postgresql-client libpq-dev mysql-client libmysqlclient-dev
 ```
+
 ## 4) Instalando o Git
 
 Para instalar o Git, basta execute o comando sudo apt-get install git. Depois de instalado, será necessário configurar os dados que serão utilizados na hora que você for fazer um commit.
