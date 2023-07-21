@@ -39,7 +39,18 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 Set `ZSH_THEME="spaceship"` in your `.zshrc`.
 
-### Plugins ZSH (`.zshrc`)
+### Plugins ZSH
+- zsh-autosuggestions (https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
+```zsh
+git clone https://github.com/zsh-users/zsh-autosuggestions ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-autosuggestions
+```
+
+- zsh-syntax-highlighting (https://github.com/zsh-users/zsh-syntax-highlighting/blob/master/INSTALL.md)
+```zsh
+git clone https://github.com/zsh-users/zsh-syntax-highlighting.git ${ZSH_CUSTOM:-~/.oh-my-zsh/custom}/plugins/zsh-syntax-highlighting
+```
+
+- File `.zshrc`
 ```zsh
 plugins=(git
   colored-man-pages
@@ -55,12 +66,9 @@ plugins=(git
 ```zsh
 alias gc="git commit -m"
 alias gs="git status"
-alias rf="RUBYOPT='-W:no-deprecated -W:no-experimental' rails db:drop db:create db:migrate db:seed"
-alias rsd="RUBYOPT='-W:no-deprecated -W:no-experimental' rails db:seed"
 alias fs="foreman start"
 alias rs="rails server"
 alias fds="make run"
-alias mailhog="~/go/bin/MailHog"
 ```
 
 ### Variables
