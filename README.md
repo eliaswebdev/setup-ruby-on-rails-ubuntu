@@ -167,7 +167,7 @@ sudo apt-get install mysql-client mysql-server libmysqlclient-dev
 mude para root e crie um usuário para o banco
 
 ```zsh
-su root
+sudo su
 ```
 
 ```zsh
