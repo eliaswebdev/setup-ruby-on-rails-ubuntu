@@ -101,6 +101,11 @@ user.email=eliaswebdev@gmail.com
 ```
 ## 5) Instalando o Ruby com RVM (http://rvm.io/)
 
+### Install GPG2: 
+```zsh
+sudo apt install gnupg2
+```
+
 ### Install GPG keys: 
 ```zsh
 gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB82D39DC0E3 7D2BAF1CF37B13E2069D6956105BD0E739499BDB
@@ -114,6 +119,15 @@ gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB
 ### For installing RVM with default Ruby and Rails in one command, run: 
 ```zsh
 \curl -sSL https://get.rvm.io | bash -s stable --rails
+```
+
+### Instalando versões antigas do ruby com rvm
+```zsh
+rvm pkg install openssl
+```
+
+```zsh
+rvm install ruby-2.7.1 --with-openssl-dir=$HOME/.rvm/usr
 ```
 
 ## 6) Instalando o Node e Yarn
@@ -177,4 +191,22 @@ mysql
 ```zsh
 CREATE USER 'dev'@'%' IDENTIFIED BY 'root@123';
 GRANT ALL ON *.* TO 'dev'@'%';
+```
+
+## 9) Redis
+```zsh
+sudo apt install redis-tools
+```
+
+```zsh
+sudo snap install redis
+```
+### testando
+```zsh
+redis-cli
+```
+
+```zsh
+127.0.0.1:6379> ping
+PONG
 ```
