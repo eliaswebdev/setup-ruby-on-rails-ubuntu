@@ -224,6 +224,15 @@ Type "help" for help.
 elias=#
 ```
 
+```zsh
+su postgres
+psql -d template1 -U postgres
+
+create database <database>;
+create user <user> with password '<password>';
+grant all privileges on database <database> to <user>;
+```
+
 ## 8) MySQL
 ```zsh
 sudo apt-get install mysql-client mysql-server libmysqlclient-dev
