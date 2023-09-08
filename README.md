@@ -39,6 +39,11 @@ ln -s "$ZSH_CUSTOM/themes/spaceship-prompt/spaceship.zsh-theme" "$ZSH_CUSTOM/the
 
 Set `ZSH_THEME="spaceship"` in your `.zshrc`.
 
+```zsh
+nano ~/.zshrc
+```
+```ZSH_THEME="spaceship"```
+
 ### Plugins ZSH
 - zsh-autosuggestions (https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
 ```zsh
