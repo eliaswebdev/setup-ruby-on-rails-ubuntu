@@ -42,7 +42,9 @@ Set `ZSH_THEME="spaceship"` in your `.zshrc`.
 ```zsh
 nano ~/.zshrc
 ```
-```ZSH_THEME="spaceship"```
+```zsh
+ZSH_THEME="spaceship"
+```
 
 ### Plugins ZSH
 - zsh-autosuggestions (https://github.com/zsh-users/zsh-autosuggestions/blob/master/INSTALL.md)
