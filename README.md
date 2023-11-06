@@ -16,7 +16,7 @@ sudo apt update && sudo apt dist-upgrade && sudo apt upgrade
 ## 2) Instalando ZSH e Oh-My-Zsh
 ### [zsh]
 ```zsh
-sudo apt install build-essential git htop zsh
+sudo apt install build-essential git htop zsh curl
 ```
 ### [oh-my-zsh] https://ohmyz.sh
 ```zsh
@@ -87,7 +87,7 @@ export EDITOR='code'
 
 ## 3) Instalando dependências básicas
 ```zsh
-$ sudo apt-get install build-essential git curl net-tools jpegoptim optipng imagemagick libmagickwand-dev unattended-upgrades patch zlib1g-dev liblzma-dev postgresql-client libpq-dev mysql-client libmysqlclient-dev
+sudo apt-get install build-essential git curl net-tools jpegoptim optipng imagemagick libmagickwand-dev unattended-upgrades patch zlib1g-dev liblzma-dev postgresql-client libpq-dev mysql-client libmysqlclient-dev
 ```
 
 ## 4) Instalando o Git
@@ -95,14 +95,14 @@ $ sudo apt-get install build-essential git curl net-tools jpegoptim optipng imag
 Para instalar o Git, basta execute o comando sudo apt-get install git. Depois de instalado, será necessário configurar os dados que serão utilizados na hora que você for fazer um commit.
 
 ```zsh
-$ git config --global user.name 'Elias Ferreira Junior'
-$ git config --global user.email eliaswebdev@gmail.com
+git config --global user.name 'Elias Ferreira Junior'
+git config --global user.email eliaswebdev@gmail.com
 ```
 
 Para listar as configurar instaladas, execute o comando git config -l.
 
 ```zsh
-$ git config -l
+git config -l
 user.name=Elias Ferreira Junior
 user.email=eliaswebdev@gmail.com
 ```
