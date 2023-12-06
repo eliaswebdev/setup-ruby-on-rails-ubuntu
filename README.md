@@ -140,13 +140,16 @@ rvm install ruby-2.7.1 --with-openssl-dir=$HOME/.rvm/usr
 ### Instalando versões antigas do ruby com rvm 2
 
 ```zsh
-wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
-wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.19_amd64.deb
-wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.1.1f-1ubuntu2.19_amd64.deb
+wget http://archive.ubuntu.com/ubuntu/pool/main/o/openssl/libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
+wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/openssl_1.1.1f-1ubuntu2.20_amd64.deb
+wget http://security.ubuntu.com/ubuntu/pool/main/o/openssl/libssl-dev_1.1.1f-1ubuntu2.20_amd64.deb
 
-sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.19_amd64.deb
-sudo dpkg -i libssl-dev_1.1.1f-1ubuntu2.19_amd64.deb
-sudo dpkg -i openssl_1.1.1f-1ubuntu2.19_amd64.deb
+sudo dpkg -i libssl1.1_1.1.1f-1ubuntu2.20_amd64.deb
+sudo dpkg -i libssl-dev_1.1.1f-1ubuntu2.20_amd64.deb
+sudo dpkg -i openssl_1.1.1f-1ubuntu2.20_amd64.deb
+```
+```zsh
+rvm install ruby-2.7.1 --with-openssl-dir=$HOME/.rvm/usr
 ```
 
 ## 6) Instalando o Node, Yarn e NVM
