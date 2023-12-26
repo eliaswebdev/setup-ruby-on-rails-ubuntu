@@ -155,27 +155,13 @@ rvm install ruby-2.7.1 --with-openssl-dir=/usr/local/ssl
 ## 6) Instalando o Node, Yarn e NVM
 Go to https://github.com/nodesource/distributions/blob/master/README.md
 
-### Node.js v18.x:
-```zsh
-curl -fsSL https://deb.nodesource.com/setup_18.x | sudo -E bash - &&\
-sudo apt-get install -y nodejs
-```
-
-### Yarn
-```zsh
-curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
-echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
-```
-```zsh
-sudo apt update && sudo apt install yarn
-```
-
 ### NVM
 - Link: https://github.com/nvm-sh/nvm#installing-and-updating
+- https://github.com/nvm-sh/nvm?tab=readme-ov-file#installing-and-updating
   
 - Install
 ```zsh
-curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.4/install.sh | bash
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.7/install.sh | bash
 ```
 
 - add ~/.zshrc
@@ -205,8 +191,23 @@ load-nvmrc() {
 }
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
-
 #NVM
+```
+
+- Install Node
+
+```zsh
+nvm install node
+```
+
+### Yarn
+```zsh
+curl -sS https://dl.yarnpkg.com/debian/pubkey.gpg | sudo apt-key add -
+echo "deb https://dl.yarnpkg.com/debian/ stable main" | sudo tee /etc/apt/sources.list.d/yarn.list
+```
+
+```zsh
+sudo apt update && sudo apt install --no-install-recommends yarn
 ```
 
 ## 7) PostgreSql
@@ -269,6 +270,7 @@ sudo apt install redis-tools
 ```
 
 ```zsh
+sudo apt install redis-server
 sudo snap install redis
 ```
 ### testando
