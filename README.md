@@ -271,8 +271,13 @@ sudo apt install redis-tools
 
 ```zsh
 sudo apt install redis-server
+```
+ou 
+
+```zsh
 sudo snap install redis
 ```
+
 ### testando
 ```zsh
 redis-cli
