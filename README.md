@@ -106,6 +106,12 @@ git config -l
 user.name=Elias Ferreira Junior
 user.email=eliaswebdev@gmail.com
 ```
+
+```zsh
+eval "$(ssh-agent)"
+ssh-add -l
+ssh-add ~/.ssh/id_rsa
+```
 ## 5) Instalando o Ruby com RVM (http://rvm.io/)
 
 ### Install GPG2: 
