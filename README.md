@@ -107,11 +107,6 @@ user.name=Elias Ferreira Junior
 user.email=eliaswebdev@gmail.com
 ```
 
-```zsh
-eval "$(ssh-agent)"
-ssh-add -l
-ssh-add ~/.ssh/id_rsa
-```
 ## 5) Instalando o Ruby com RVM (http://rvm.io/)
 
 ### Install GPG2: 
@@ -292,4 +287,13 @@ redis-cli
 ```zsh
 127.0.0.1:6379> ping
 PONG
+```
+
+## Extras:
+Fix ssh agent
+
+```zsh
+eval "$(ssh-agent)"
+ssh-add -l
+ssh-add ~/.ssh/id_rsa
 ```
