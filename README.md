@@ -290,8 +290,12 @@ PONG
 ```
 
 ## Extras:
-Fix ssh agent
+### Github keygen:
+```zsh
+ssh-keygen -t rsa -b 4096 -C "your_email@example.com"
+```
 
+### Fix ssh agent
 ```zsh
 eval "$(ssh-agent)"
 ssh-add -l
