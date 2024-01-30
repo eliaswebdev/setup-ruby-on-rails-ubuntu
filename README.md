@@ -103,6 +103,10 @@ Para listar as configurar instaladas, execute o comando git config -l.
 
 ```zsh
 git config -l
+```
+
+Resultado esperado:
+```zsh
 user.name=Elias Ferreira Junior
 user.email=eliaswebdev@gmail.com
 ```
@@ -129,6 +133,10 @@ gpg2 --keyserver keyserver.ubuntu.com --recv-keys 409B6B1796C275462A1703113804BB
 \curl -sSL https://get.rvm.io | bash -s stable --rails
 ```
 
+### Recarregue seu zshrc
+```zsh
+source ~/.zshrc
+```
 ### Instalando versões antigas do ruby com rvm
 ```zsh
 rvm pkg install openssl
@@ -193,6 +201,12 @@ load-nvmrc() {
 add-zsh-hook chpwd load-nvmrc
 load-nvmrc
 #NVM
+```
+
+- Recarregue seu zshrc
+
+```zsh
+source ~/.zshrc
 ```
 
 - Install Node
