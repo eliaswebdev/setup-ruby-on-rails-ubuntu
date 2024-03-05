@@ -27,7 +27,7 @@
   },
   "emmet.syntaxProfiles": {
     "erb": "html",
-    "jl.erb": "js",
+    "js.erb": "js",
     "javascript": "jsx"
   },
   "emmet.triggerExpansionOnTab": true,
