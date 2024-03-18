@@ -282,13 +282,10 @@ GRANT ALL ON *.* TO 'dev'@'%';
 
 ## 9) Redis
 ```zsh
-sudo apt install redis-tools
+sudo apt install redis-tools redis-server
 ```
 
-```zsh
-sudo apt install redis-server
-```
-ou 
+Snap alternative:
 
 ```zsh
 sudo snap install redis
@@ -296,11 +293,10 @@ sudo snap install redis
 
 ### testando
 ```zsh
-redis-cli
+redis-cli ping
 ```
 
 ```zsh
-127.0.0.1:6379> ping
 PONG
 ```
 
