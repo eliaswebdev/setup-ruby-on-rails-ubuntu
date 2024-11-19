@@ -1,3 +1,4 @@
+```
 code --install-extension adpyke.codesnap
 code --install-extension aki77.html-erb
 code --install-extension aliariff.vscode-erb-beautify
@@ -67,3 +68,4 @@ code --install-extension vue.volar
 code --install-extension wallabyjs.console-ninja
 code --install-extension znck.vue
 code --install-extension zneuray.erb-vscode-snippets
+```
